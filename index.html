@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Pagina raggiungibile solo col link/QR: niente indicizzazione -->
+  <meta name="robots" content="noindex, nofollow">
+  <title>Loft Via della Stufa - Guida ospiti</title>
+  <meta name="description" content="Tutto per il soggiorno al Loft di Via della Stufa, Prato">
+  <meta name="theme-color" content="#f3ede3" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16140f" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231d4aa0'/><text x='32' y='46' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%23f3ede3'>S</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/soggiorno-s.webp" media="(max-width: 800px)">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Vai ai contenuti</a>
+
+  <header class="hero">
+    <picture>
+      <source media="(min-width: 801px)" srcset="img/soggiorno.webp">
+      <img src="img/soggiorno-s.webp" alt="" width="800" height="534" fetchpriority="high">
+    </picture>
+    <div class="hero__veil"></div>
+    <div class="hero__text">
+      <p class="hero__kicker" id="hero-kicker"></p>
+      <h1 class="hero__title" id="hero-title"></h1>
+      <p class="hero__sub" id="hero-sub"></p>
+    </div>
+    <div class="lang" role="group" aria-label="Lingua / Language">
+      <button type="button" data-lang="it">IT</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <nav class="quick" id="quick" aria-label="Azioni rapide"></nav>
+  <nav class="toc" id="toc" aria-label="Sezioni"></nav>
+
+  <main id="main"></main>
+
+  <footer class="foot" id="foot"></footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript><p style="padding:24px">Attiva JavaScript per vedere la guida. / Please enable JavaScript to view this guide.</p></noscript>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
